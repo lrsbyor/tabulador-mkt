@@ -259,7 +259,7 @@ dialog::backdrop{background:rgba(2,8,22,.38);-webkit-backdrop-filter:blur(4px);b
 html{background-color:var(--bg)}
 .sbar{display:none;position:fixed;top:0;left:0;right:0;height:max(env(safe-area-inset-top),12px);background:var(--bg);z-index:45;pointer-events:none}
 [data-touch="1"] .sbar{display:block}
-[data-touch="1"] .mbar{background:var(--bg)}
+html[data-touch="1"] body .mbar{background:var(--bg);padding-top:max(env(safe-area-inset-top),12px);min-height:calc(50px + max(env(safe-area-inset-top),12px))}
 /* touch */
 [data-touch="1"] input,[data-touch="1"] select{font-size:16px;min-height:42px}
 [data-touch="1"] .num button{width:44px}
